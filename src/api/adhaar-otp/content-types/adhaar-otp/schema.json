@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adhaar_otps",
+  "info": {
+    "singularName": "adhaar-otp",
+    "pluralName": "adhaar-otps",
+    "displayName": "adhaar_otp"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "mobile": {
+      "type": "string"
+    },
+    "ref_id": {
+      "type": "string"
+    }
+  }
+}
