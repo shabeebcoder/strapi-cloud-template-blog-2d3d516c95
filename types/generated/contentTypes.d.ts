@@ -401,12 +401,13 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
 export interface ApiAdhaarOtpAdhaarOtp extends Struct.CollectionTypeSchema {
   collectionName: 'adhaar_otps';
   info: {
+    description: '';
     displayName: 'adhaar_otp';
     pluralName: 'adhaar-otps';
     singularName: 'adhaar-otp';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     createdAt: Schema.Attribute.DateTime;
