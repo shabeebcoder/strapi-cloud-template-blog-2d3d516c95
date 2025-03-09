@@ -440,7 +440,7 @@ export interface ApiApplicationApplication extends Struct.CollectionTypeSchema {
     draftAndPublish: false;
   };
   attributes: {
-    application_status: Schema.Attribute.String;
+    application_status: Schema.Attribute.String & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -464,7 +464,8 @@ export interface ApiApplicationApplication extends Struct.CollectionTypeSchema {
         'cibil_score',
         'employment_verification',
       ]
-    >;
+    > &
+      Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -20,10 +20,12 @@
         "permanant_address_verification",
         "cibil_score",
         "employment_verification"
-      ]
+      ],
+      "required": true
     },
     "application_status": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "tenant": {
       "type": "relation",
