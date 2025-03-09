@@ -431,12 +431,13 @@ export interface ApiAdhaarOtpAdhaarOtp extends Struct.CollectionTypeSchema {
 export interface ApiApplicationApplication extends Struct.CollectionTypeSchema {
   collectionName: 'applications';
   info: {
+    description: '';
     displayName: 'application';
     pluralName: 'applications';
     singularName: 'application';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     application_status: Schema.Attribute.String;
