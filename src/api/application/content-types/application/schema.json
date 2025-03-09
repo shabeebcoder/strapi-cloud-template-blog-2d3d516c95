@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "applications",
+  "info": {
+    "singularName": "application",
+    "pluralName": "applications",
+    "displayName": "application"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type_of_application": {
+      "type": "enumeration",
+      "enum": [
+        "pcc",
+        "criminal_background_check",
+        "id_verification",
+        "permanant_address_verification",
+        "cibil_score",
+        "employment_verification"
+      ]
+    },
+    "application_status": {
+      "type": "string"
+    },
+    "tenant": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
